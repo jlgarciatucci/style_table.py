@@ -123,4 +123,16 @@ style_table(df.head(10), caption="Fully Styled Iris Dataset", column_cmap={
 ```
 <div align="center"> <img src="https://github.com/user-attachments/assets/265f3905-abd6-41c3-ae58-80ea62b5e652" alt="Centered Image" /> </div>
 
+## 🛠️ Customization Options
+- **column_cmap:** Apply colormaps (e.g., "Blues", "Greens") to specific columns.
+- **reverse_cmap:** Set True to reverse colormap gradients.
+- **width:** Adjust column width (default is "100px").
+- **border:** Customize cell borders (default is "1px solid black").
+- **header_background:** Customize the header background color (default is "lightblue").
+- **row_height:** Set the height of rows (default is "15px").
+- **hide_index:** Set True to hide the index.
+- **font_size:** Customize the font size for table content (default is "14px").
+- **font_family:** Customize the font family for table content (default is "Arial").
 
+## 🤝 Contributing
+Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request.
