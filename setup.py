@@ -9,8 +9,8 @@ setup(
     install_requires=["pandas"],
     include_package_data=True,
     description="A library for styling pandas DataFrames in Jupyter Notebooks",
-    long_description=long_description,  # Long description from README.md
-    long_description_content_type="text/markdown",  # This ensures markdown rendering on PyPI
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/yourusername/style_table.py",
     author="Jose Luis Garcia Tucci",
     author_email="jlgarciatucci@gmail.com",
