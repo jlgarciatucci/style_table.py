@@ -86,3 +86,41 @@ style_table(df.head(10), caption="Iris Dataset with Reversed Gradient and Large 
 }, reverse_cmap=True, font_size="18px", font_family="Georgia")
 ```
 <div align="center"> <img src="https://github.com/user-attachments/assets/d098e627-4e62-455d-a069-eb757c33eac7" alt="Centered Image" /> </div>
+
+## 4. Hiding the Index with Custom Fonts
+In this example, we hide the DataFrame index, use a larger font size, and apply a custom font family.
+```python
+import style_table
+import pandas as pd
+from sklearn.datasets import load_iris
+
+# Load the Iris dataset
+iris = load_iris()
+df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+
+# Hide the index and use custom fonts
+style_table(df.head(10), caption="Iris Dataset (Index Hidden, Custom Fonts)", hide_index=True, font_size="16px", font_family="Courier New")
+```
+<div align="center"> <img src="https://github.com/user-attachments/assets/2f403b56-393f-48ca-9d58-1fca963218ca" alt="Centered Image" /> </div>
+
+## 5. Combining All Features: Gradients, Hidden Index, and Fonts
+In this final example, we apply gradients, hide the index, and customize both the font size and family for a fully styled table.
+```pyhton
+import style_table
+import pandas as pd
+from sklearn.datasets import load_iris
+
+# Load the Iris dataset
+iris = load_iris()
+df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+
+# Apply all customizations: gradients, hidden index, and fonts
+style_table(df.head(10), caption="Fully Styled Iris Dataset", column_cmap={
+    "sepal length (cm)": "Blues",
+    "petal length (cm)": "Greens",
+    "petal width (cm)": "Oranges"
+}, width="200px", border="3px dotted",hide_index=True, header_background="aliceblue", font_size="12px", font_family="Calibri")
+```
+<div align="center"> <img src="https://github.com/user-attachments/assets/265f3905-abd6-41c3-ae58-80ea62b5e652" alt="Centered Image" /> </div>
+
+
